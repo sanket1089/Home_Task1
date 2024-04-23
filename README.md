@@ -8,7 +8,7 @@ Before getting started, ensure you have the following prerequisites installed on
 - [Node.js](https://nodejs.org/) and npm (Node Package Manager)
 - [Visual Studio Code](https://code.visualstudio.com/) (optional but recommended)
 - [Appium](http://appium.io/) (installed globally via npm)
-- [AndriodStudio] (https://developer.android.com/studio)
+- [AndriodStudio] (https://developer.android.com/studio) (need to install for device enumerator)
 - Create virtual device name [Pixel_3a] with platform version [14].
 
 ## Getting Started
