@@ -11,17 +11,17 @@ exports.config = {
     // WebdriverIO supports running e2e tests as well as unit and component tests.
 
 
-    beforeSession: function () {
-        // Run the script to kill Appium processes before starting the tests
-        const killAppiumScript = process.platform === 'win32' ? 'killAppiumProcesses.bat' : 'node killAppiumProcesses.js';
-        exec(killAppiumScript, (error, stdout, stderr) => {
-            if (error) {
-                console.error(`Error executing killAppiumProcesses script: ${error.message}`);
-            } else {
-                console.log('Appium processes killed before session:', stdout);
-            }
-        });
-    },
+    // beforeSession: function () {
+    //     // Run the script to kill Appium processes before starting the tests
+    //     const killAppiumScript = process.platform === 'win32' ? 'killAppiumProcesses.bat' : 'node killAppiumProcesses.js';
+    //     exec(killAppiumScript, (error, stdout, stderr) => {
+    //         if (error) {
+    //             console.error(`Error executing killAppiumProcesses script: ${error.message}`);
+    //         } else {
+    //             console.log('Appium processes killed before session:', stdout);
+    //         }
+    //     });
+    // },
 
     after: function(test, context, { error, result, duration, passed, retries }) {
         const exec = require('child_process').exec;
